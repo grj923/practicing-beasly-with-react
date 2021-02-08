@@ -1,0 +1,16 @@
+.Header {
+    color: white;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .Header h2 {
+        color: beige;
+        font-weight: normal;
+      }
+      
+      .Header img {
+        border: 5px solid white;
+        border-radius: 50%;
+      }
