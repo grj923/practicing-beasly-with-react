@@ -1,14 +1,13 @@
 import React from "react";
+import AlbumTitle from "../albumtitle/AlbumTitle";
+
+import "./Header.css";
 
 function Header(props) {
   return (
     <div className="Header">
       <div>
-        <h1 className="AlbumTitle">
-          <button>Reveal Album Title</button>
-          <span>Night of the Salamander</span>
-        </h1>
-
+        <AlbumTitle />
         <h2>
           The new release from <strong>Beasley the Bard</strong>
         </h2>
