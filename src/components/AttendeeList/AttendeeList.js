@@ -1,7 +1,11 @@
 import React from "react";
+import Attendee from "../attendee/Attendee";
 import "./AttendeeList.css";
 function AttendeeList(props) {
-  return <ul className="AttendeeList">Attendee List</ul>;
+  const listItems = props.attendees.map((attendee, i) => (
+    <Attendee key={i} attendee={attendee} />
+  ));
+  return <ul className="AttendeeList">{listItems}</ul>;
 }
 
 export default AttendeeList;

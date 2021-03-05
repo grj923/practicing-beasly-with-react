@@ -14,7 +14,7 @@ class Main extends Component {
 
   addAttendee = (attendee) => {
     this.setState((state, props) => ({
-      attendees: [...this.state.attendees, attendee],
+      attendees: [...state.attendees, attendee],
     }));
   };
   render() {
@@ -28,7 +28,7 @@ class Main extends Component {
         <SignUpForm addAttendee={this.addAttendee} />
         <h1 className="dark">Pre-order now!</h1>
         <p className="dark">The cool kids will all be there</p>
-        <AttendeeList />
+        <AttendeeList attendees={this.state.attendees} />
         <ul className="AttendeeList"></ul>
       </div>
     );
